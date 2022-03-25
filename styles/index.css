@@ -24,15 +24,15 @@
   /* 상단 배너 */
   /* 상단 배너 배경 색 */
   /* --top-banner-bg: var(--body-bg); */
-  --top-banner-bg: #000000;
+  --top-banner-bg: #2417FF  ;
   /* 상단 배너 글자 색 */
   --top-banner-font: #ffffff;
 
   /* 빅 버튼 */
   /* 빅 버튼 배경 색 */
-  --cta-button-bg: #01c0e2;
+  --cta-button-bg: #FFBC10;
   /* 빅 버튼 글자 색 */
-  --cta-button-font: #ffffff;
+  --cta-button-font: #000000;
 
   /* 상단 배너 버튼 */
   /* 상단 배너 버튼 배경 색 */
@@ -57,7 +57,7 @@
   --section-card-title-font: #000000;
   /* 카드 설명 색 */
   --section-card-subtitle-font: #737373;
-  
+
   /* Service */
   /* 배경 색 */
   --service-title-bg: var(--section-title-bg);
