@@ -363,10 +363,17 @@ nav {
   font-size: 20px;
   line-height: 27.5px;
 }
+
 .card__subtitle {
   font-size: 18px;
   line-height: 140%;
   letter-spacing: -0.36px;
+}
+
+.card__subtitle__2 {
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.32px;
   margin-top: 14px;
 }
 
