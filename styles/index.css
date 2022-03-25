@@ -1,13 +1,7 @@
-@font-face {
-  font-family: "Semi-Bold-Pretendard";
-  src: url("../statics/fonts/Pretendard/SemiBold.woff") format("woff"),
-    url("../statics/fonts/Pretendard/SemiBold.ttf") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 
-@font-face {
-  font-family: "Pretendard";
-  src: url("../statics/fonts/Pretendard/Regular.woff") format("woff"),
-    url("../statics/fonts/Pretendard/Regular.ttf") format("truetype");
+* {
+  font-family: "Noto Sans KR" !important;
 }
 
 /* 색 변수 모음 */
@@ -197,54 +191,70 @@ nav {
 
 /* 탑배너 */
 .top-banner__content {
-  margin: 123px 137px 48px 107px;
+  margin: 90px 97px 60px 107px  ;
+  font-family: "Noto Sans KR ";
 }
 
 .top-banner__right {
-  width: 400px;
+  width: 400px; 
   height: 400px;
   margin-right: 70px;
 }
 
 .bold {
-  font-family: "Pretendard";
+  font-family: "Noto Sans KR";
   font-weight: 700;
 }
 .regular {
-  font-family: "Pretendard";
+  font-family: "Noto Sans KR";
   font-weight: 400;
 }
 
 .top-banner__title {
-  font-size: 24px;
-  line-height: 33px;
+  width: 304px; 
+  height: 90px;
+  font-size: 28px;
+  line-height: 160%;
+  letter-spacing: -0.56px;
 }
 
 .top-banner__subtitle {
+  width: 182px; 
+  height: 22px;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 137.5%;
+  letter-spacing: -0.32px;
 }
 
 .top-banner__cta-button {
-  margin-top: 67px;
   background: var(--cta-banner-button-bg);
   color: var(--cta-banner-button-font);
   width: 310px;
-  height: 67px;
+  height: 56px;
   font-size: 20px;
-  border-radius: 6px;
+  line-height: 160%;
+  border-radius: 0px;
 }
 
 .top-banner__image {
-  width: 400px;
+  margin-right : 43px;
+  width: 467px;
   height: 400px;
   object-fit: cover;
 }
 
 /* 각 섹션 */
 
-.container {
+.container-service {
   margin: 75px 24px 0px 24px;
+}
+
+.container-product {
+  margin: 127px 39px 0px 39px;
+}
+
+.container-method {
+  margin-top: 180px;
 }
 
 #service-section > .section-title {
@@ -310,17 +320,23 @@ nav {
 }
 
 .section-title__main {
-  font-size: 30px;
-  margin-bottom: 11px;
-  line-height: 37.5px;
+  margin-top: 88px;
+  margin-bottom: 26px;
+  font-size: 28px;
+  line-height: auto;
 }
 
 .section-title__sub {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 36px;
-  margin-bottom: 49px;
+  margin-bottom: 68px;
 }
 
+.grid-1fr {
+  display: grid;
+  grid-gap: 180px;
+  grid-template-columns: 1fr;
+}
 .grid-3fr {
   display: grid;
   grid-gap: 24px;
@@ -334,29 +350,29 @@ nav {
 }
 
 .card__image {
-  width: 100%;
-  height: 230px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 4px;
-  margin-bottom: 13px;
+  display: block;
+  margin: auto;
+  margin-bottom: 24px;
 }
 
 .card__title {
   font-size: 20px;
   line-height: 27.5px;
-  padding: 2px 0px;
-  margin-bottom: 4px;
 }
 .card__subtitle {
-  font-size: 16px;
-  line-height: 24px;
-  padding: 2px 0px;
-  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -0.36px;
+  margin-top: 14px;
 }
 
 .card__tag {
   margin-top: 20px;
-  font-family: "Semi-Bold-Pretendard";
+  font-family: "Noto Sans KR";
   font-weight: 600;
   size: 14px;
   line-height: 21px;
@@ -432,7 +448,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Pretendard";
+  font-family: "Noto Sans KR";
   font-weight: 400;
 }
 
@@ -449,7 +465,7 @@ nav {
 }
 
 .semi-bold {
-  font-family: "Semi-Bold-Pretendard";
+  font-family: "Noto Sans KR";
 }
 
 .footer__bottom {
