@@ -4,7 +4,7 @@
   font-family: "Noto Sans KR" !important;
 }
 
-/* 색 변수 모음 */
+/* o 색 변수 모음 */
 :root {
   /* 전체 배경 */
   --body-bg: #ffffff;
@@ -20,13 +20,13 @@
   /* --top-banner-bg: var(--body-bg); */
   --top-banner-bg: #2417FF  ;
   /* 상단 배너 글자 색 */
-  --top-banner-font: #ffffff;
+  --top-banner-font: #f4f4f4;
 
   /* 빅 버튼 */
   /* 빅 버튼 배경 색 */
   --cta-button-bg: #FFBC10;
   /* 빅 버튼 글자 색 */
-  --cta-button-font: #000000;
+  --cta-button-font: #121212;
 
   /* 상단 배너 버튼 */
   /* 상단 배너 버튼 배경 색 */
@@ -44,13 +44,13 @@
   /* 배경 색 */
   --section-title-bg: var(--body-bg);
   /* 글자 색 */
-  --section-title-font: #000000;
+  --section-title-font: #121212;
   /* 카드 색 */
   --section-card-bg: var(--body-bg);
   /* 카드 제목 색 */
-  --section-card-title-font: #000000;
+  --section-card-title-font: #303030;
   /* 카드 설명 색 */
-  --section-card-subtitle-font: #737373;
+  --section-card-subtitle-font: #3a3a3a;
 
   /* Service */
   /* 배경 색 */
@@ -75,25 +75,20 @@
   --product-card-title-font: var(--section-card-title-font);
   /* 카드 설명 색 */
   --product-card-subtitle-font: var(--section-card-subtitle-font);
-
-  /* Product 태그 */
-  /* 배경 색 */
-  --tag-bg: #f5f5f5;
-  /* 글자 색 */
-  --tag-font: #737373;
   
-  /* Team */
+  /* Method */
   /* 배경 색 */
-  --team-title-bg: var(--section-title-bg);
+  --method-title-bg: var(--section-title-bg);
   /* 글자 색 */
-  --team-title-font: var(--section-title-font);
+  --method-title-font: var(--section-title-font);
   /* 카드 제목 색 */
-  --team-card-bg: var(--section-card-bg);
+  --method-card-bg: var(--section-card-bg);
   /* 카드 설명 색 */
-  --team-card-title-font: var(--section-card-title-font);
+  --method-card-title-font: var(--section-card-title-font);
   /* 카드 설명 색 */
-  --team-card-subtitle-font: var(--section-card-subtitle-font);
+  --method-card-subtitle-font: var(--section-card-subtitle-font);
 
+  /* 아직 몰랑~ */
   /* 하단 경계선 색 */
   --footer-border-top: #d4d4d4;
   /* 하단 바 */
@@ -190,41 +185,37 @@ nav {
   display: flex;
 }
 
+
 /* 탑배너 */
+
 .top-banner__content {
   margin: 90px 97px 60px 107px  ;
-  font-family: "Noto Sans KR ";
-}
-
-.top-banner__right {
-  width: 400px; 
-  height: 400px;
-  margin-right: 70px;
 }
 
 .bold {
-  font-family: "Noto Sans KR";
   font-weight: 700;
 }
+
+.medium {
+  font-weight: 500;
+}
+
 .regular {
-  font-family: "Noto Sans KR";
   font-weight: 400;
 }
 
 .top-banner__title {
-  width: 304px; 
-  height: 90px;
   font-size: 28px;
   line-height: 160%;
   letter-spacing: -0.56px;
+  margin-bottom: 24px;
 }
 
 .top-banner__subtitle {
-  width: 182px; 
-  height: 22px;
   font-size: 16px;
   line-height: 137.5%;
   letter-spacing: -0.32px;
+  color: #f7f7f7;
 }
 
 .top-banner__cta-button {
@@ -232,9 +223,9 @@ nav {
   color: var(--cta-banner-button-font);
   width: 310px;
   height: 56px;
+  margin-top: 60px;
   font-size: 20px;
   line-height: 160%;
-  border-radius: 0px;
 }
 
 .top-banner__image {
@@ -244,18 +235,19 @@ nav {
   object-fit: cover;
 }
 
-/* 각 섹션 */
+
+/* 각 섹션 컬러 */
 
 .container-service {
-  margin: 75px 24px 0px 24px;
+  margin: 88px 24px 0px 24px;
 }
 
 .container-product {
-  margin: 127px 39px 0px 39px;
+  margin: 127px 26px 0px 26px;
 }
 
 .container-method {
-  margin-top: 180px;
+  margin-top: 128px;
 }
 
 #service-section > .section-title {
@@ -275,7 +267,7 @@ nav {
   color: var(--service-card-subtitle-font);
 }
 
-#product-section > .section-title {
+#product-section > .section-title__2 {
   background-color: var(--product-title-bg);
   color: var(--product-title-font);
 }
@@ -284,54 +276,48 @@ nav {
   background-color: var(--product-card-bg);
 }
 
-#product-section > .grid-3fr > .card__ > .card__title {
+#product-section > .grid-3fr > .card__ > .card__title__2 {
   color: var(--product-card-title-font);
 }
 
-#product-section > .grid-3fr > .card__ > .card__subtitle {
+#product-section > .grid-3fr > .card__ > .card__subtitle__2 {
   color: var(--product-card-subtitle-font);
 }
 
-#product-section > .grid-3fr > .card__ > .card__tag {
-  color: var(--product-card-tag-font);
-  background-color: var(--product-card-tag-bg);
+#method-section > .section-title {
+  background-color: var(--method-title-bg);
+}
+
+#method-section > .section-title > .section-title__main__3{
+  color: var(--method-title-font);
+}
+
+#method-section > .section-title > .section-title__sub__3{
+  color: var(--method-card-title-font);
+}
+
+#method-section > .grid-1fr > .card__ {
+  background-color: var(--method-card-bg);
+}
+
+#method-section > .grid-1fr > .card__ > .card__right__box > .card__title__3 {
+  color: var(--method-title-font);
+}
+
+#method-section > .grid-1fr > .card__ > .card__right__box > .card__subtitle__3 {
+  color: var(--method-card-subtitle-font);
+}
+
+#method-section > .grid-1fr > .card__ > .card__left__box > .card__title__3 {
+  color: var(--method-title-font);
+}
+
+#method-section > .grid-1fr > .card__ > .card__left__box > .card__subtitle__3 {
+  color: var(--method-card-subtitle-font);
 }
 
 
-#team-section > .section-title {
-  background-color: var(--team-title-bg);
-  color: var(--team-title-font);
-}
-
-#team-section > .grid-4fr > .card__ {
-  background-color: var(--team-card-bg);
-}
-
-#team-section > .grid-4fr > .card__ > .card__title {
-  color: var(--team-card-title-font);
-}
-
-#team-section > .grid-4fr > .card__ > .card__subtitle {
-  color: var(--team-card-subtitle-font);
-}
-
-#team-section > .grid-4fr > .card__ > .card__tag {
-  color: var(--team-card-tag-font);
-  background-color: var(--team-card-tag-bg);
-}
-
-.section-title__main {
-  margin-top: 88px;
-  margin-bottom: 26px;
-  font-size: 28px;
-  line-height: auto;
-}
-
-.section-title__sub {
-  font-size: 20px;
-  line-height: 36px;
-  margin-bottom: 68px;
-}
+/* 그리드 */
 
 .grid-1fr {
   display: grid;
@@ -356,6 +342,16 @@ nav {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+
+/* Service 1번째 박스 */
+
+.section-title {
+  font-size: 28px;
+  line-height: auto;
+  margin-bottom: 68px;
+  letter-spacing: -0.56px;
+}
+
 .card__image {
   width: 200px;
   height: 200px;
@@ -366,66 +362,100 @@ nav {
   margin-bottom: 24px;
 }
 
-.card__title {
-  font-size: 20px;
-  line-height: 27.5px;
-}
-
 .card__subtitle {
   font-size: 18px;
   line-height: 140%;
   letter-spacing: -0.36px;
 }
 
+
+/* Product 2번째 박스 */
+
+.section-title__2 {
+  font-size: 28px;
+  line-height: auto;
+  margin-bottom: 26px;
+  letter-spacing: -0.56px;
+}
+
+.card__image__2 {
+  width: 272.25px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+  margin: auto;
+  margin-bottom: 28px;
+}
+
+.card__title__2 {
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 14px;
+  letter-spacing: -0.40px;
+}
+
 .card__subtitle__2 {
   font-size: 16px;
-  line-height: 140%;
+  line-height: 150%;
   letter-spacing: -0.32px;
-  margin-top: 14px;
+}
+
+/* Method 3번째 박스 */
+
+.section-title__main__3 {
+  font-size: 28px;
+  line-height: auto;
+  margin-bottom: 12px;
+}
+
+.section-title__sub__3 {
+  font-size: 20px;
+  line-height: auto;
+  margin-bottom: 68px;
+}
+
+.card__image__3 {
+  width: 559px;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 180px;
 }
 
 .card__title__3 {
   font-size: 28px;
   line-height: 44px;
-  text-align: center;
-  margin-right: 100px;
+  text-align: left;
+  margin-bottom: 56px;
 }
 
 .card__subtitle__3 {
   font-size: 16px;
-  line-height: 150%;
+  line-height: 24px;
   letter-spacing: -0.32px;
-  text-align: center;
+  text-align: left;
+}
+
+.card__left__box {
+  float: left;
+  margin-top: 24px;
+  margin-left: 100px;
+}
+
+.card__right__box {
+  float: right;
+  margin-top: 24px;
   margin-right: 100px;
 }
 
-.card__tag {
-  margin-top: 20px;
-  font-family: "Noto Sans KR";
-  font-weight: 600;
-  size: 14px;
-  line-height: 21px;
-  color: var(--tag-font);
-  background: var(--tag-bg);
-  width: fit-content;
-  height: 29px;
-  padding: 4px 8px;
-  border-radius: 4px;
+.card__image__step {
+  width: 60;
+  height: 20;
+  margin-bottom: 12px;
 }
 
-.card__image__2 {
-  width: 559px;
-  height: 370px;
-  object-fit: cover;
-  border-radius: 4px;
-  margin-left: 24px;
-  margin-bottom: 180px;
-  float : left;
-}
 
-.card__box {
-  float : right;
-}
 
 /* 프로모션 배너 이미지 */
 
